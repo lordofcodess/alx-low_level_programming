@@ -7,25 +7,25 @@
 
 int main(void)
 {
-	int ones;
-	int tens;
+	int i, j;
 
-	for (ones = '0'; tens <= '9'; tens++)
+	for (i = 0; i <= 9; i++)
 	{
-		for (ones = (tens + 1); ones <= '9'; ones++)
+		for (j = 1; j <= 9; j++)
 		{
-			putchar(tens);
-			putchar(ones);
-
-			if (tens != '8' || ones != '9')
+			if (j > i)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(i + '0');
+				putchar(j + '0');
+				if (i != 8)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
 	putchar('\n');
-
 	return (0);
 }
 
