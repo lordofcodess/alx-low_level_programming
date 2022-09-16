@@ -3,7 +3,9 @@
 
 /**
 * _isupper - function to check if cahracter is uppercase
+* 
 * @c: checks input of function
+* 
 * Reurn: returns 1 if 'c' is uppercase
 * otherwise always 0 (Success)
 */
